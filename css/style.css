@@ -11,7 +11,7 @@
   --youtube-color: hsl(348, 97%, 39%);
 
   --toggle-light: hsl(230, 22%, 74%);
-  --toggle-dark: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+  --toggle-dark: linear-gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
 
   /*=== Dark Theme ===*/
 
@@ -70,17 +70,17 @@ body {
 }
 
 /*=== HEADER ===*/
-header {
+#title {
   justify-content: space-between;
   padding: 0 100px 30px 100px;
 }
 
-header h1 {
+#title h1 {
   font-size: 25px;
   line-height: 35px;
 }
 
-.dark-mode p {
+.light-mode p {
   padding-right: 5px;
 }
 
@@ -272,4 +272,50 @@ main {
 
 .all-views .flex-content img {
   margin-right: 5px;
+}
+
+.body-dark-mode {
+  background-color: var(--very-dark-blue-bg);
+}
+
+.dark-mode {
+  color: var(--white-text);
+  background-color: var(--dark-desaturated-blue-card-bg) !important;
+}
+
+.dark-mode-text {
+  color: var(--white-text) !important;
+}
+
+@media only screen and (max-width: 950px) {
+  #title,
+  main {
+    padding: 0 25px;
+  }
+
+  #title.flex-content {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  #title.flex-content .title-content {
+    width: 100%;
+  }
+
+  .light-mode.flex-content {
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px 0px;
+    justify-content: space-between;
+    border-top: 1px solid var(--toggle-light);
+  }
+
+  .grid-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards {
+    margin-bottom: 20px;
+  }
 }
