@@ -12,4 +12,4 @@
 </ul>
 
 <h2>Desafio e resultado</h2>
-<p>O desafio proposto do projeto ainda está em fase de desenvolvimento</p>
+<p>O desafio proposto do projeto pode ser visto <a href="https://social-media-dashboard-frontendmentor.netlify.app/">aqui</p>
